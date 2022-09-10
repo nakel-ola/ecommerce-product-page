@@ -20,7 +20,7 @@
 Desktop Preview
 ![](./src/assets/screenshot/desktop-preview.png)
 
-Mobile Preview
+### Mobile Preview
 <img src="./src/assets/screenshot/mobile-preview.png" width="300">
 
 ### Links
