@@ -40,13 +40,13 @@ const ProductDetails = ({
   };
 
   return (
-    <section className={styles.container}>
+    <div className={styles.container}>
       <p className={styles.companyName}>SNEAKER COMPANY</p>
       <h1>{title}</h1>
       <p className={styles.description}>{description}</p>
       <article className={styles.price}>
         <div className="">
-          <h1>$125.00</h1>
+          <strong>$125.00</strong>
           <div className="">
             <p className="">50%</p>
           </div>
@@ -73,7 +73,7 @@ const ProductDetails = ({
           </button>
         )}
       </section>
-    </section>
+    </div>
   );
 };
 
