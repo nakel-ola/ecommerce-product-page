@@ -35,18 +35,18 @@ const Popup = (props) => {
           </div>
         </div>
 
-        <section className={styles.thumbnails}>
+        <ul className={styles.thumbnails}>
           {items.map((item, index) => (
-            <div
+            <li
               key={index}
               className={`${styles.thumbnail} ${active === index ? styles.active : ""}`}
               onClick={() => setActive(index)}
             >
               <img src={item.thumbnail} alt="" />
               <div />
-            </div>
+            </li>
           ))}
-        </section>
+        </ul>
       </div>
     </div>
   );
