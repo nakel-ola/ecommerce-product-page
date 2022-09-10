@@ -44,7 +44,7 @@ const ProductDetails = ({
       <p className={styles.companyName}>SNEAKER COMPANY</p>
       <h1>{title}</h1>
       <p className={styles.description}>{description}</p>
-      <article className={styles.price}>
+      <div className={styles.price}>
         <div className="">
           <strong>$125.00</strong>
           <div className="">
@@ -52,7 +52,7 @@ const ProductDetails = ({
           </div>
         </div>
         <s className="">${price}</s>
-      </article>
+      </div>
 
       <section className={styles.buttons}>
         <div className={styles.iconButtons}>
