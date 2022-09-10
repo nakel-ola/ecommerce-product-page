@@ -19,7 +19,7 @@ const Navbar = ({ cart }) => {
 
   return (
     <nav className={styles.container}>
-      <section className={styles.left}>
+      <div className={styles.left}>
         <div className={styles.menu} onClick={() => setShow(true)}>
           <IoMenuOutline className={styles.icon}/>
         </div>
@@ -35,9 +35,9 @@ const Navbar = ({ cart }) => {
             </li>
           ))}
         </ul>
-      </section>
+      </div>
 
-      <section className={styles.right}>
+      <div className={styles.right}>
         <div className={styles.cart}>
           <div className={styles.icons}>
             <div className={styles.iconButton} onClick={() => setOpen(true)}>
@@ -53,7 +53,7 @@ const Navbar = ({ cart }) => {
         <div className={styles.avatar}>
           <img src={image} alt="" />
         </div>
-      </section>
+      </div>
 
       <MenuCard show={show} setShow={setShow}/>
 
