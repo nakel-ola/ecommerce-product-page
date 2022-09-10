@@ -15,7 +15,7 @@ const MenuCard = ({ setShow,show }) => {
         <ul className={styles.list}>
           {options.map((option, index) => (
             <li key={index} className="">
-              <a role="link" className="">
+              <a className="">
                 {option}
               </a>
             </li>

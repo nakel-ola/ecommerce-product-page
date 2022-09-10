@@ -30,7 +30,7 @@ const Navbar = ({ cart }) => {
         <ul className={styles.list}>
           {options.map((option, index) => (
             <li key={index} className={option === active ? styles.active : ""} onClick={() => setActive(option)}>
-              <a role="link">{option}</a>
+              <a>{option}</a>
               {option === active && <span />}
             </li>
           ))}
