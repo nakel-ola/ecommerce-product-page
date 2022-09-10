@@ -54,7 +54,7 @@ const ProductDetails = ({
         <s className="">${price}</s>
       </div>
 
-      <section className={styles.buttons}>
+      <div className={styles.buttons}>
         <div className={styles.iconButtons}>
           <div className={styles.iconButton} onClick={removeFromCart}>
             <IoRemoveOutline className={styles.icon} />
@@ -72,7 +72,7 @@ const ProductDetails = ({
             Add to cart
           </button>
         )}
-      </section>
+      </div>
     </div>
   );
 };

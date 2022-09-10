@@ -48,7 +48,7 @@ const ImagesCard = (props) => {
   };
 
   return (
-    <section className={styles.container}>
+    <div className={styles.container}>
       <div
         className={styles.image}
         onClick={() => !popup && screen.width > "768" && setOpen(true)}
@@ -78,7 +78,7 @@ const ImagesCard = (props) => {
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   );
 };
 
