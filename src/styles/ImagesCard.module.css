@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 310px;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.image > img:hover {
+  transform: scale(1.15);
+}
+
+.thumbnails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  margin: 8px 8px 0 0;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.thumbnail > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.thumbnail:hover div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.active > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  border: 1.5px solid hsl(26, 100%, 55%);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 50px;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    position: relative;
+  }
+  .image > img {
+    border-radius: 0;
+    position: relative;
+  }
+  .thumbnails {
+    display: none;
+  }
+
+  .leftButton {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .rightButton {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+}

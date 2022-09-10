@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-bottom: 0.5px solid hsl(220, 14%, 75%);
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: fit-content ;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.list > li {
+  margin: 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.list > li > a {
+  color: hsl(219, 9%, 45%);
+  font-size: 0.8rem;
+  text-align: center;
+  position: relative;
+}
+
+.active {
+  color: hsl(0, 0%, 0%);
+  font-weight: 600;
+}
+
+.list > li > span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: hsl(26, 100%, 55%);
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cart {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.iconButton {
+  height: 35px;
+  width: 35px;
+  flex-shrink: 0;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon {
+  font-size: 1rem;
+  color: hsl(219, 9%, 45%);
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 20px;
+  height: 12px;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge > p {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.avatar {
+  height: 35px;
+  width: 35px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  margin: 8px;
+  transition: all 0.3s ease;
+}
+.avatar:hover {
+  border: 1.5px solid hsl(26, 100%, 55%);
+}
+
+.avatar > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    border: 0;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    margin: 8px;
+  }
+  .menu > .icon {
+    font-size: 2rem;
+    color: #000;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .right {
+    /* width: 100%; */
+  }
+}
